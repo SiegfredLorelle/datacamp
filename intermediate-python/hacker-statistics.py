@@ -380,6 +380,3 @@ ends = np_aw_t[-1, :]
 # Plot histogram of ends, display plot
 plt.hist(ends, bins=10)
 plt.show()
-
-
-
