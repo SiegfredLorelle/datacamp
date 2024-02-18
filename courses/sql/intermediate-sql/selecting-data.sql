@@ -89,4 +89,3 @@ Adjust the sample code so that it is in line with standard practices.
 SELECT person_id, role 
 FROM roles 
 LIMIT 10;
-
