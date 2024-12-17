@@ -253,3 +253,18 @@ Align the cluster labels with the list titles of article titles by creating a Da
 Use the .sort_values() method of df to sort the DataFrame by the 'label' column, and print the result.
 Hit submit and take a moment to investigate your amazing clustering of Wikipedia pages!
 """
+
+# Import pandas
+import pandas as pd
+
+# Fit the pipeline to articles
+pipeline.fit(articles)
+
+# Calculate the cluster labels: labels
+labels = pipeline.predict(articles)
+
+# Create a DataFrame aligning labels and titles: df
+df = pd.DataFrame({'label': labels, 'article': titles})
+
+# Display df sorted by cluster label
+print(df.sort_values(by="label"))
